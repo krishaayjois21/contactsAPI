@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  contacts-api-service:
+    container_name: "contactsapi"
+    build: .
+    ports:
+      - "8080:9000"
+    volumes:
+      - .\:/usr/src/app

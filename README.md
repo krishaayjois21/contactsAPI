@@ -1,1 +1,1 @@
-# contactsAPI
+# contacts-api
