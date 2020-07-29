@@ -2,7 +2,7 @@
 
 # Documentation for API
 
-## List All Contacts stored in Database
+### List All Contacts stored in Database
 
 Endpoint
 
@@ -14,20 +14,26 @@ Response
 
 ```json
 {
-'message': 'success',
-'data': 
+	"message": "success",
+	"data": 
     [
         {
-        'name': 'John Doe',
-        'number': '98201805430',
-        'email': 'john.doe@email.com',
-        'contact-id': '4256344'
+        	"name": "John Doe",
+        	"number": "98201805430",
+        	"email": "john.doe@email.com",
+        	"contact-id": "4256344"
+        },
+        {
+        	"name": "Jenna Doe",
+        	"number": "98298805430",
+        	"email": "jenna.doe@email.com",
+        	"contact-id": "7865690"
         }
     ]
 }
 ```
 
-## Add A new contact to the Database
+### Add A new contact to the Database
 
 Endpoint
 
@@ -48,18 +54,18 @@ Response
 
 ```json
 {
-'message': 'created',
-'data': 
+	"message": "created",
+	"data": 
     {
-        'name': 'Jack Ryan',
-        'number': '54353465364',
-        'email': 'jack.ryan@examplemail.com',
-        'contact-id': '64564565464'
+        "name": "Jack Ryan",
+        "number": "54353465364",
+        "email": "jack.ryan@examplemail.com",
+        "contact-id": "64564565464"
     }
 }
 ```
 
-## Get Details for a specific contact
+### Get Details for a specific contact
 
 Endpoint
 
@@ -74,13 +80,13 @@ Response
 
 ```json
 {
-'message': 'success',
-'data': 
+	"message": "success",
+	"data": 
     {
-        'name': 'Jack Ryan',
-        'number': '54353465364',
-        'email': 'jack.ryan@examplemail.com',
-        'contact-id': '64564565464'
+        "name": "Jack Ryan",
+        "number": "54353465364",
+        "email": "jack.ryan@examplemail.com",
+        "contact-id": "64564565464"
     }
 }
 ```
@@ -89,16 +95,13 @@ Response
 
 ```json
 {
-'message': 'not found',
-'data': 
-    {
-
-    }
+	"message": "not found",
+	"data":{}
 
 }
 ```
 
-## Deleting a contact from the Database
+### Deleting a contact from the Database
 
 Endpoint
 
@@ -113,11 +116,8 @@ Response
 
 ```json
 {
-'message': 'deleted',
-'data':
-    {
-
-    }
+	"message": "deleted",
+	"data":{}
 
 }
 ```
@@ -126,10 +126,7 @@ Response
 
 ```json
 {
-'message': 'not found',
-'data': 
-    {
-
-    }
+	"message": "not found",
+	"data": {}
 }
 ```
